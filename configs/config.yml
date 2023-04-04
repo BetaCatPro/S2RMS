@@ -1,0 +1,30 @@
+dataset_params:
+  dataset_path_fixed: "training_dataset"
+  evaluation_path_fixed: "evaluation_dataset"
+  dataset_path: "training_dataset"
+  evaluation_path: "evaluation_dataset"
+  scale_labeled_samples: [0.005, .025, .05]
+
+model_params:
+  number_of_neurons_1: 16
+  number_of_neurons_2: 32
+  in_channels: 13,
+  number_pos_neg: 5
+
+exp_params:
+  batch_size: 32
+  epochs: 30
+  LR: 0.001
+  optimizer: "adam"
+
+logging_params:
+  save_dir: "saves/"
+  manual_seed: 2333
+
+experiment_params:
+  run_iter: 50
+  base_data_dir: "data"
+  iteration: 20
+  tau: 3
+  gr: 1
+  K: 3
